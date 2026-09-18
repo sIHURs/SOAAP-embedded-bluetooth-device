@@ -1,0 +1,16 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)   // it could be worked around by allowing project repos. This would require changing the settings.gradle in the Android project.
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "SOAAPInterface"
+include ':app'

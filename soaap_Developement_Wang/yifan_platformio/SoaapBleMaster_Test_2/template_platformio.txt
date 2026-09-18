@@ -1,0 +1,59 @@
+; PlatformIO Project Configuration File
+;
+;   Build options: build flags, source filter
+;   Upload options: custom upload port, speed and extra flags
+;   Library options: dependencies, extra library storages
+;   Advanced options: extra scripting
+;
+; Please visit documentation for the other options and examples
+; https://docs.platformio.org/page/projectconf.html
+
+[env:nano33ble]
+platform = nordicnrf52
+board = nano33ble
+framework = arduino
+upload_port = COM3
+build_flags =
+	-DsmnDEFBYBUILD -DsmnNANOBLE33 -DsmnDEBUG
+lib_deps = 
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\BlePoll
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\environment
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\ComRingBuf
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\LoopCheck
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\MidiNotes
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\Monitor
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\nRF52840Gpio
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\nRF52840Radio
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\nRF52840Ser
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\nRF52840Twi
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\SensorLSM9DS1
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\SoaapMsg
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\StateMachine
+	;symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\SoaapComDue
+	
+[env:Logging]
+platform = nordicnrf52
+board = nano33ble
+framework = arduino
+upload_port = COM3
+build_flags =
+	-DsmnDEFBYBUILD -DsmnNANOBLE33 -DsmnDEBUG
+lib_deps = 
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\BlePoll
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\environment
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\ComRingBuf
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\LoopCheck
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\MidiNotes
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\Monitor
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\nRF52840Gpio
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\nRF52840Radio
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\nRF52840Ser
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\nRF52840Twi
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\SensorLSM9DS1
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\SoaapMsg
+	symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\StateMachine
+	;symlink://C:\Users\lenna\OneDrive\Dokumente\Git\SOAAP\libraries\SoaapComDue
+monitor_filters =
+  default   ; Remove typical terminal control codes from input
+  time      ; Add timestamp with milliseconds for each new line
+  log2file  ; Log data to a file “platformio-device-monitor-*.log” located in the current working directory

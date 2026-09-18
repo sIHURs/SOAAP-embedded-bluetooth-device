@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">SOAAPInterface</string>
+
+    <string name="channel">Channel</string>
+    <string-array name="channel">
+        <item>Channel 0</item>
+        <item>Channel 1</item>
+        <item>Channel 2</item>
+        <item>Channel 3</item>
+        <item>Channel 4</item>
+        <item>Channel 5</item>
+        <item>Channel 6</item>
+        <item>Channel 7</item>
+        <item>Channel 8</item>
+        <item>Channel 9</item>
+        <item>Channel 10</item>
+        <item>Channel 11</item>
+        <item>Channel 12</item>
+        <item>Channel 13</item>
+        <item>Channel 14</item>
+        <item>Channel 15</item>
+    </string-array>
+
+    <string-array name="rangeSliderValues">
+        <item>20</item>
+        <item>70</item>
+    </string-array>
+
+    <string-array name="NoteType">
+        <item>2</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="MidiValue">
+        <item>20</item>
+        <item>90</item>
+    </string-array>
+
+    <string-array name="Aims">
+        <item>Nothing</item>
+        <item>NoteType</item>
+        <item>NoteValue</item>
+        <item>NoteVelocity</item>
+    </string-array>
+
+    <string-array name="Mapping">
+        <item>OneToOne</item>
+        <item>BiLinear</item>
+    </string-array>
+
+    <string-array name="OpMode">
+        <item>momSequence</item>
+        <item>momRunDelta</item>
+    </string-array>
+
+    <string-array name="SlaveNr">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+</resources>
